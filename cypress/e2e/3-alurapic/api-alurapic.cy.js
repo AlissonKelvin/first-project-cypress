@@ -11,7 +11,7 @@ describe('Buscar fotos e dados', ()=>{
             expect(res.body[0].description).to.be.equal('Farol iluminado')
         })
     })
-    it.only('fazer login',()=>{
+    it('fazer login',()=>{
         cy.request({
             method:'POST',
             url:'https://apialurapic.herokuapp.com/user/login',

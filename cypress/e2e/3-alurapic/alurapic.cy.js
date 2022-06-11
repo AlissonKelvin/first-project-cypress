@@ -42,7 +42,7 @@ describe('Login e registro de usuários no alura pic', ()=>{
 
     const usuarios = require('../../fixtures/user.json')
     usuarios.forEach(usuario =>{
-        it.only('Verificar cadastro do usuário',()=>{
+        it('Verificar cadastro do usuário',()=>{
             cy.cadastrar(
                 usuario.email,
                 usuario.fullName,
